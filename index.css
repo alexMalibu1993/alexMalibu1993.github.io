@@ -14,13 +14,15 @@ body {
 
 }
 
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none
-}
+ ul {
+    display:flex;
+     justify-content: space-between;
+     list-style-type: none;
+ }
 
-button {
+
+
+button  {
     background-color: #4CAF50; /* Green */
     border-radius: 12px;
     color: white;
@@ -29,8 +31,21 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    transition: 0.3s ease;
   
 }
+
+
+button:hover  {
+    cursor: pointer;
+     background-color: #00ff1a; 
+   box-shadow: 0 0 5px #00ff1a,
+               0 0 20px#00ff1a,
+               0 0 60px#00ff1a,
+               0 0 150px#00ff1a;
+}
+
+
 
 .container1 {
 
@@ -91,17 +106,23 @@ button {
 }
 
 
-
 .redeSocial a {
-
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: all 0.4s;
     color: greenyellow;
     padding: 10px;
     margin-top: 5px;
-
+   
 }
 
-
-
+.redeSocial :hover{
+    opacity: 1;
+    transform: translateY(-5x);
+    cursor: pointer;
+    
+}
 h1 {
     color: greenyellow
 }
